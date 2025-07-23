@@ -1,0 +1,165 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Fuente amigable y moderna */
+  background-color: #f0f2f5; /* Fondo gris claro */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+  color: #000000; /* Texto en color negro */
+}
+
+/* Estilos para el encabezado utilizando Flexbox */
+header {
+  display: flex; /* Activa el modo flexible */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  background-color: #f9b6d2; /* Fondo rosado pastel */
+  color: white; /* Texto en color blanco */
+  padding: 20px; /* Espaciado interno */
+}
+
+header img {
+  border-radius: 50%; /* Imagen en forma circular */
+  width: 120px; /* Ancho fijo */
+  height: 120px; /* Alto fijo */
+  object-fit: cover; /* Ajuste de imagen sin deformarla */
+  margin-right: 20px; /* Separación de la imagen respecto al texto */
+  border: 3px solid #000000; /* Borde negro */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra suave */
+}
+
+header h1 {
+  font-size: 28px; /* Tamaño grande para el título */
+  margin: 0; /* Sin margen adicional */
+  color: #000000; /* Título en color negro */
+}
+
+/* Sección "¿Cómo soy?" con borde rosa */
+.como-soy {
+  border: 2px solid #ff80b3; /* Borde rosa pastel */
+}
+
+/* Estilo general para todas las secciones */
+section {
+  background-color: white; /* Fondo blanco */
+  margin: 30px auto; /* Espaciado vertical y centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilo personalizado para el video favorito */
+.video-favorito {
+  border: 2px solid #ff80b3; /* Borde rosa pastel */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para los títulos secundarios */
+h2 {
+  color: #000000; /* Texto en negro */
+}
+
+/* Estilo para párrafos dentro de secciones */
+section p {
+  color: #000000; /* Texto en negro */
+}
+
+/* Diseño tipo Grid para los bloques de intereses y habilidades */
+.contenedor-grid {
+  display: grid; /* Activar grid layout */
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 30px; /* Separación entre columnas */
+  max-width: 800px; /* Ancho máximo */
+  margin: 30px auto; /* Espaciado vertical y centrado horizontal */
+}
+
+/* Estilo de los bloques con fondo rosa y efecto hover */
+.bloque {
+  background-color: #ffc1dc; /* Fondo rosa suave */
+  color: #000000; /* Texto en negro */
+  padding: 15px 20px; /* Espaciado interno */
+  margin: 0 auto 15px auto; /* Centrado con espacio debajo */
+  border-radius: 8px; /* Bordes redondeados */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Texto centrado */
+  max-width: 90%; /* Ancho relativo al contenedor */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease; /* Suaviza la transición de hover */
+  border: 2px solid transparent; /* Borde invisible por defecto */
+}
+
+.bloque:hover {
+  background-color: #ff99c8; /* Color rosado más fuerte al pasar el mouse */
+  border-color: #ff4fa4; /* Borde más oscuro en hover */
+  box-shadow: 0 0 12px rgba(255, 79, 164, 0.5); /* Efecto brillante en hover */
+}
+
+/* Contenedor del formulario de contacto */
+.formulario-contenedor {
+  background-color: #ffffff; /* Fondo blanco */
+  border: 2px; /* No tiene color definido para el borde */
+  padding: 25px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Layout del formulario */
+form {
+  display: flex; /* Modo flexible */
+  flex-direction: column; /* Elementos en columna */
+  gap: 15px; /* Espacio entre los campos */
+}
+
+/* Campos del formulario */
+form input,
+form textarea {
+  width: 100%; /* Ocupan todo el ancho del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #000000; /* Texto negro */
+}
+
+/* Estilo específico para input de texto, email y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block; /* Elemento en bloque */
+  width: 100%; /* Ocupan todo el ancho disponible */
+  max-width: 800px; /* Ancho máximo */
+  margin: 0 auto; /* Centrados horizontalmente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ff80b3; /* Borde rosado */
+  color: #000000; /* Texto en negro */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Botón de envío del formulario */
+form button {
+  background-color: #ff80b3; /* Fondo rosado */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 800px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontalmente */
+}
+
+/* Pie de página rosado con estilo */
+footer {
+  background-color: #f9b6d2; /* Fondo rosado pastel */
+  color: #000000; /* Texto negro */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espaciado interno */
+  border-top: 2px solid #ff80b3; /* Línea rosada en la parte superior */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 14px; /* Tamaño de fuente pequeño */
+  border-radius: 0 0 10px 10px; /* Bordes inferiores redondeados */
+}
+
+/* Diseño responsivo con Media Query */
+/* (Aquí podrías añadir reglas para pantallas pequeñas) */
+

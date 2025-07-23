@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- Define que el documento es HTML5 -->
+<html lang="es"> <!-- Lenguaje principal del contenido: Español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adaptación a pantallas móviles -->
+  <title>Mi Página Personal</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="Estilo.css"> <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="icon" href="Imagenes/personal.png" type="image/png"> <!-- Ícono para la pestaña del navegador -->
+</head>
+
+<body> <!-- Cuerpo principal de la página -->
+
+  <!-- Sección de encabezado con imagen y nombre -->
+  <header>
+    <img src="Imagenes/Astrid.jpg" alt="Mi fotografía personal"> <!-- Foto personal con descripción -->
+    <h1>Astrid Dayana Culajay Vásquez</h1> <!-- Título principal con el nombre -->
+  </header>
+
+  <!-- Sección de presentación personal -->
+  <section class="como-soy">
+    <h2>¿Cómo soy?</h2> <!-- Subtítulo de la sección -->
+    <p>Soy una persona apasionada por la naturaleza, sensible con los animales y alegre al compartir momentos al aire libre. Me gusta expresarme a través de la fotografía y cuidar a quienes me rodean.</p>
+  </section>
+
+  <!-- Sección tipo grid para intereses y habilidades -->
+  <div class="contenedor-grid">
+    
+    <!-- Bloque de intereses -->
+    <section>
+      <h2>Mis intereses</h2>
+      <div class="bloque">Protección de animales</div> <!-- Interés individual -->
+      <div class="bloque">Fotografía de paisajes naturales</div>
+      <div class="bloque">Senderismo y caminatas ecológicas</div>
+    </section>
+
+    <!-- Bloque de habilidades -->
+    <section>
+      <h2>Mis habilidades</h2>
+      <div class="bloque">Cuidar y proteger a los animales</div>
+      <div class="bloque">Actividades al aire libre</div>
+      <div class="bloque">Fotografía de naturaleza</div>
+    </section>
+  </div>
+
+  <!-- Sección con video favorito embebido -->
+  <section class="video-favorito">
+    <h2>Mi video favorito</h2>
+    <p>Aquí te comparto uno de mis videos favoritos:</p>
+    <iframe width="100%" height="315" 
+      src="https://www.youtube.com/embed/H4JE6XDR6UE" 
+      title="Video de YouTube" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe> <!-- Video embebido desde YouTube -->
+  </section>
+
+  <!-- Sección de contacto con formulario -->
+  <section>
+    <h2>Contáctame</h2>
+    <form> <!-- Formulario simple para contacto -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required> <!-- Campo obligatorio -->
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+    </form>
+  </section>
+
+  <!-- Pie de página con información adicional -->
+  <footer>
+    <p>Astrid Dayana Culajay Vásquez.</p> <!-- Nombre repetido como firma -->
+    <p>6to Perito en desarrollo de contenido digital y software</p> <!-- Información académica -->
+    <p>© 2025 Todos los derechos reservados.</p> <!-- Derechos reservados -->
+  </footer>
+
+</body>
+</html>
